@@ -1,0 +1,89 @@
+// _utilities.scss
+
+// Import variables and mixins
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+// Margin utility classes
+.m-0 {
+  margin: 0;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mr-0 {
+  margin-right: 0;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.ml-0 {
+  margin-left: 0;
+}
+
+// Padding utility classes
+.p-0 {
+  padding: 0;
+}
+
+.pt-0 {
+  padding-top: 0;
+}
+
+.pr-0 {
+  padding-right: 0;
+}
+
+.pb-0 {
+  padding-bottom: 0;
+}
+
+.pl-0 {
+  padding-left: 0;
+}
+
+// Flex utility classes
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+// Border utility classes
+.border {
+  border: 1px solid $primary-color;
+}
+
+.border-top {
+  border-top: 1px solid $primary-color;
+}
+
+.border-right {
+  border-right: 1px solid $primary-color;
+}
+
+.border-bottom {
+  border-bottom: 1px solid $primary-color;
+}
+
+.border-left {
+  border-left: 1px solid $primary-color;
+}
