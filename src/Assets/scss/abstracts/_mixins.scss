@@ -2,7 +2,7 @@
 $breakpoint-xs: 576px;
 $breakpoint-sm: 768px;
 $breakpoint-md: 992px;
-$breakpoint-lg: 1200px;
+$breakpoint-lg: 1280px;
 
 @mixin media-breakpoint-up($breakpoint) {
   @media (min-width: $breakpoint) {
@@ -39,7 +39,6 @@ $breakpoint-lg: 1200px;
 @mixin text-truncate() {
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 @mixin box-shadow($x, $y, $blur, $spread, $color: #000) {
@@ -58,6 +57,10 @@ $breakpoint-lg: 1200px;
 }
 
 // Function to lighten or darken a color by a percentage
-@function lighten-darken($color, $amount) {
+@function lighten($color, $amount) {
   @return mix(white, $color, $amount);
+}
+
+@function darken($color, $amount) {
+  @return mix(black, $color, $amount);
 }
