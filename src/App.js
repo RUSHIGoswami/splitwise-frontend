@@ -1,9 +1,14 @@
+import Auth from "./Pages/Auth/Auth";
+import { Route, Routes } from "react-router-dom";
 import Signup from "./Pages/Signup/Signup";
 
 function App() {
   return (
     <>
-      <Signup />
+      <Routes>
+        <Route path="/" element={<Auth />} />
+        <Route path="/signup" element={<Signup />} />
+      </Routes>
     </>
   );
 }
