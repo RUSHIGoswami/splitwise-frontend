@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+import Signupform from "../../Components/forms/Signupform";
+import Loginform from "../../Components/forms/Loginform";
 
 const Auth = () => {
   const [slide, setSlide] = useState(false);
   let slideProp;
-  slide && (slideProp = { left: "440px" });
+  slide && (slideProp = { left: "50%" });
 
   let formSlideProp;
   slide && (formSlideProp = { left: "-900px" });
@@ -30,19 +32,8 @@ const Auth = () => {
           </button>
         </div>
         <div className="form-section" style={formSlideProp}>
-          <form className="login-form">
-            <h2>LOGIN FORM</h2>
-            <input type="email" placeholder="Enter your email" />
-            <input type="password" placeholder="Enter your password" />
-            <button type="submit">Login</button>
-          </form>
-          <form className="signup-form">
-            <h2>SIGN UP FORM</h2>
-            <input type="text" placeholder="Enter your name" />
-            <input type="email" placeholder="Enter your email" />
-            <input type="password" placeholder="Enter your password" />
-            <button type="submit">Sign up</button>
-          </form>
+          <Loginform />
+          <Signupform />
         </div>
       </div>
     </div>

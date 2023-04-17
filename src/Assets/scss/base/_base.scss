@@ -30,6 +30,8 @@ body {
     hsl(296, 99%, 41%) 97%,
     hsl(299, 96%, 44%) 100%
   );
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 #root {
   display: flex;
